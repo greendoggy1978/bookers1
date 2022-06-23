@@ -36,7 +36,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book), notice: "Book was successfully created."
     else
       @books=Book.all
-      render :index
+      render :edit
     end
   end
 
